@@ -1,0 +1,1 @@
+pandas\nnumpy\nnltk\nnetworkx\nscikit-learn\nmatplotlib

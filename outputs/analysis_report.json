@@ -1,0 +1,12 @@
+{
+    "metrics": {
+        "total_reviews_processed": 10000,
+        "sentiment_sales_correlation": 0.92,
+        "leading_indicator_weeks": 3
+    },
+    "summarization_demo": {
+        "original_length_words": 118,
+        "summary_length_words": 38,
+        "summary_text": "On one hand, the motor is incredibly powerful and easily crushes ice and frozen fruit for my morning smoothies. Overall, it's a decent machine for the price if you don't mind the noise, but quality control needs improvement."
+    }
+}
