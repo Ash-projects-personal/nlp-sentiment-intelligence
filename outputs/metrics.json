@@ -1,0 +1,54 @@
+{
+  "dataset": {
+    "name": "IMDb movie reviews (Maas et al., 2011), aclImdb",
+    "source": "https://huggingface.co/datasets/stanfordnlp/imdb (official Hugging Face distribution of the aclImdb dataset, Maas et al. 2011)",
+    "license_note": "Published by the authors for research use. Reviews are user written movie reviews with binary sentiment labels from star ratings.",
+    "train_rows_used": 4000,
+    "test_rows_used": 1000,
+    "sampling": "seed 42, 2000 per class from the 25,000 train reviews, 500 per class from the 25,000 test reviews, official train and test splits kept separate"
+  },
+  "results": {
+    "vader_lexicon": {
+      "accuracy": 0.73
+    },
+    "tfidf_logistic_regression": {
+      "accuracy": 0.849
+    }
+  },
+  "tfidf_classification_report": {
+    "neg": {
+      "precision": 0.8525252525252526,
+      "recall": 0.844,
+      "f1-score": 0.8482412060301507,
+      "support": 500.0
+    },
+    "pos": {
+      "precision": 0.8455445544554455,
+      "recall": 0.854,
+      "f1-score": 0.8497512437810946,
+      "support": 500.0
+    },
+    "accuracy": 0.849,
+    "macro avg": {
+      "precision": 0.849034903490349,
+      "recall": 0.849,
+      "f1-score": 0.8489962249056227,
+      "support": 1000.0
+    },
+    "weighted avg": {
+      "precision": 0.849034903490349,
+      "recall": 0.849,
+      "f1-score": 0.8489962249056227,
+      "support": 1000.0
+    }
+  },
+  "summarizer_demo": {
+    "source_words": 557,
+    "source_sentences": 30,
+    "summary_words": 25,
+    "summary": "The point is that Vera and her family are symbols for all of Soviet life. This was life in the Soviet Union for most people.",
+    "note": "One example from the test set. Compression is counted, not a time saving claim. No analyst time was measured."
+  },
+  "removed_claims": "No sentiment to sales correlation is reported. No BERT, no T5. The summarizer is TF-IDF graph TextRank and is described as such.",
+  "runtime_seconds": 4.9
+}
